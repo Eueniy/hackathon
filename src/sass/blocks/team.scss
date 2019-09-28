@@ -130,4 +130,136 @@
     align-items: center;
   }
 
+  /* Общие настройки html */
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html{
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  img {
+   display: block;
+    max-width: 100%;
+    height: auto;   
+  }
+
+  .section-conteiner{
+    width: 275px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-text{
+    padding-left: 15px;
+    padding-right: 2px;
+    margin-bottom: 50px;
+    margin-top: 35px;
+    font-family: ﻿OpenSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 16px;
+    color: rgba(6, 32, 51, 255);
+    text-align: center;
+  }
+  
+  .team-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .card{
+    width: 275px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .card-image{
+    width: 275px;
+    height: 305px;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+  }
+
+
+  .card-name{
+    display: inline-block;
+    font-family: ﻿OpenSans-Semibold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 18px;
+    color: rgba(6, 32, 51, 255);
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .card-position{
+    display: inline-block;
+    font-family: ﻿OpenSans, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+    font-size: 13px;
+    color: rgba(6, 32, 51, 255);
+    text-align: center;
+    text-decoration: none;
+}
+
+  .card-grad {
+    width: 275px;
+    height: 305px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+
+  .img{
+    position: relative;
+  }
+
+  @keyframes move {
+    from {
+  
+    }
+  
+    to {
+  margin-top: -10px;
+  margin-left: -10px;
+    }
+  }
+
+  .card-image:hover .img {
+    animation-duration: 0.2s;
+    animation-name: move;
+    animation-fill-mode: forwards;
+  }
+
+  .card-image:hover .card-grad {
+    background: linear-gradient(to top, #fce38a, #f38181);
+    opacity: 0.9;
+    animation-duration: 0.2s;
+    animation-name: move;
+    animation-fill-mode: forwards;
+  }
+
+       /*Стилизация SVG*/
+
+   .socials-item {
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+    margin-right: 2px;
+    position: relative;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   
