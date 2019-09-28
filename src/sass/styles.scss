@@ -1,13 +1,16 @@
-/*
-   Import partials below
-*/
+//Import partials below
+
 @import './normalize';
 @import './helpers/variables';
 @import './fonts';
+@import './components/base';
+@import './components/container';
 
+//blocks
 
-div {
-  font-family: $main-font-regular;
-  font-size: 16px;
-  color: $main-color-site;
-}
+@import './blocks/header';
+@import './blocks/header';
+@import './blocks/video';
+@import './blocks/team';
+@import './blocks/reviews';
+@import './blocks/footer';
