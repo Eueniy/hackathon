@@ -1,36 +1,81 @@
-// .title {
-//   @extend %title;
-// }
-
-.contact-us {
-  // background-image: url(./img.png);
-}
-
-.form input {
-  display: block;
-}
-
-.fa {
-  padding: 8px;
-  width: 20px;
+.footer__container {
+  // width: 100%;
+  margin: 0 auto;
+  padding: 15px;
   text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
 }
 
-.fa-facebook {
-  background: #3b5998;
-  color: white;
+.title {
+  @extend %title;
 }
 
-.fa-twitter {
-  background: #55acee;
-  color: white;
+.footer__form--title {
+  color: #fff;
+  margin-top: 56px;
 }
 
-.fa-linkedin {
-  background: #007ab9;
-  color: white;
+.footer__form--title::before,
+.footer__form--title::after {
+  background-color: #fff;
 }
 
-//
+.footer__contact-us {
+  background-image: url(../../images/footer-background.png);
+  background-size: cover;
+}
+
+.footer__form--input {
+  display: block;
+  width: 100%;
+  padding: 16px 20px;
+  margin: 24px 0;
+  color: grey;
+  border-radius: 5px;
+}
+
+.footer__button--submit {
+  font-size: 18px;
+  padding: 1em 3em;
+  background-color: turquoise;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer__button--submit:hover {
+  cursor: pointer;
+}
+
+.footer__title--down {
+  color: #fff;
+  margin-top: 50px;
+  padding-bottom: 10px;
+}
+
+.footer__text--down {
+  color: #fff;
+}
+
+.footer__social-icon {
+  // width: 16px;
+  // height: 16px;
+  color: #fff;
+}
+
+.footer__phone,
+.footer__email {
+  color: #bface2;
+}
+
+.footer__copyright {
+  color: #919191;
+  text-align: left;
+}
+
+.footer__copyright::before {
+  content: '';
+  display: block;
+  background-color: #919191;
+  width: 100vw;
+  height: 1px;
+  margin: 22px -15px;
+}
