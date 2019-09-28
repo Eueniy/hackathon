@@ -1,3 +1,7 @@
+.title {
+  @extend %title;
+}
+
 .contact-us {
   // background-image: url(./img.png);
 }
