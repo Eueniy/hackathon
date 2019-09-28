@@ -1,0 +1,23 @@
+.video {
+  height: 730px;
+  background-color: $color-bg-btn-download;
+}
+
+.video__main-text {
+  font-family: $main-font;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 60px;
+  padding-bottom: 15px;
+}
+
+.video__text {
+  display: block;
+  font-family: $text-font;
+  font-size: 16px;
+  line-height: 26px;
+  color: $second-color-text;
+  text-align: center;
+  padding: 0 20px 15px;
+}
