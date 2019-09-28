@@ -20,13 +20,13 @@
     height: auto;   
   }
 
-  .section-conteiner{
+  .section__container{
     width: 275px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .section-text{
+  .section__text{
     padding-left: 15px;
     padding-right: 2px;
     margin-bottom: 50px;
@@ -37,7 +37,7 @@
     text-align: center;
   }
   
-  .team-container{
+  .team__container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -48,10 +48,11 @@
     height: auto;
     text-align: center;
     margin: 0 auto;
-    position: relative;
+   
   }
 
-  .card-image{
+  .card__image{
+    cursor: pointer;
     width: 275px;
     height: 305px;
     overflow: hidden;
@@ -61,8 +62,8 @@
   }
 
 
-  .card-name{
-    display: inline-block;
+  .card__name{
+    margin-top: 20px;
     font-family: ﻿OpenSans-Semibold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
     font-size: 18px;
     color: rgba(6, 32, 51, 255);
@@ -70,64 +71,35 @@
     text-decoration: none;
   }
 
-  .card-position{
-    display: inline-block;
+  .card__position{
+    margin-top: 15px;
     font-family: ﻿OpenSans, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
     font-size: 13px;
     color: rgba(6, 32, 51, 255);
     text-align: center;
     text-decoration: none;
+    margin-bottom: 50px;
 }
 
-  .card-grad {
+  .card__grad {
     width: 275px;
     height: 305px;
-    position: absolute;
     top: 0;
     opacity: 0;
+    /*position: absolute;*/
   }
-
-  // .img{
-  //   position: relative;
-  // }
-
-  @keyframes move {
-    from {
   
-    }
-  
-    to {
-  margin-top: -10px;
-  margin-left: -10px;
-    }
-  }
-
-  .card-image:hover .img {
-    animation-duration: 0.2s;
-    animation-name: move;
-    animation-fill-mode: forwards;
-  }
-
-  .card-image:hover .card-grad {
-    background: linear-gradient(to top, #fce38a, #f38181);
-    opacity: 0.9;
-    animation-duration: 0.2s;
-    animation-name: move;
-    animation-fill-mode: forwards;
-  }
-
-       /*Стилизация SVG*/
-
-   .socials-item {
-    width: 56px;
-    height: 56px;
-    background-color: #fce38a;
-    margin-right: 2px;
-    position: relative;
+ .socials{
+    position: absolute;
+    height: 305px;
+    width: 275px;
+    top: 0;
+    left: 0;
+   /* transition: var(--trans);
+    background: linear-gradient(#ed8889, #eed787);*/
     opacity: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  
+    text-align: center;
+    padding-top: 20px;
+    
+    
+}
