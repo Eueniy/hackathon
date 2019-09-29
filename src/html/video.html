@@ -7,6 +7,29 @@
       at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at,
       hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.
     </span>
-    <img src="./images/video.png" alt="video window">
+    <div class="video__icon">
+      <span class="video__icon--apple">
+        <svg width="28" height="32">
+          <use href="./images/sprite.svg#icon-apple"></use>
+        </svg>
+      </span>
+      <svg width="30" height="36">
+        <use href="./images/sprite.svg#icon-android"></use>
+      </svg>
+
+    </div>
+    <div class="video__window">
+      <img
+        srcset="./images/video.png 500w,
+        ./images/video@2x.png 1000w"
+        src="./images/video.png"
+        alt="video window">
+      <span class="video__button-play">
+        <img src="./images/play-button.png" alt="">
+        <span class="video__button-arrow">
+          <img src="./images/play-button-arrow.png" alt="">
+        </span>
+      </span>
+    </div>
   </div>
 </section>

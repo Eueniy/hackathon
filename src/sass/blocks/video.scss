@@ -21,3 +21,39 @@
   text-align: center;
   padding: 0 20px 15px;
 }
+
+.video__icon {
+  display: flex;
+}
+
+.video__icon--apple {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: $color-bg-icon;
+}
+
+.video__window {
+  position: relative;
+}
+
+.video__window img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.video__button-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 42px;
+}
+
+.video__button-arrow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+}
