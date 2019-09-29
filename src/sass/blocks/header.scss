@@ -1,98 +1,112 @@
-
- /* ------------------------------------------ */
+/* ------------------------------------------ */
 //  @media screen and (min-width: 320px){
 
-  .wrapper__indent{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1.5em;
-  }
-  .wrapper__header{
-      max-width: 768px;
-      height: 568px;
-      background-image: url('/images/background-mobail-image.jpg');
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      padding-top: 21px;
-      margin-bottom: 40px;
-    }
-  .navigation{
-    max-height: 547px;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    
+.wrapper__indent {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+.wrapper__header {
+  max-width: 768px;
+  height: 568px;
+  background-image: url('/images/background-mobail-image.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 21px;
+  margin-bottom: 40px;
+}
+.navigation {
+  max-height: 547px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.wrapper__logo-burger {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ---------------menu-burger------------------ */
+.menu-burger {
+  visibility: visible;
+  cursor: pointer;
+}
+.menu-burger-btn {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
 
-  }
-  .wrapper__logo-burger{
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-    /* ---------------menu-burger------------------ */
-    .menu-burger
-  {
-    visibility: visible;
-    cursor: pointer;
-  }
-  .menu-burger-btn{
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-  }
-  // ================================================4
+  outline: none;
+}
+// ================================================4
 
-  .menu-burger span
-  {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-    
-    background: $first-color-text;
-    border-radius: 3px;
-    
-    z-index: 1;
+.menu-burger span {
+  display: block;
+  width: 43px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
 
+  background: $first-color-text;
+  border-radius: 3px;
+  margin-right: 20px;
+
+  z-index: 1;
+}
+
+.span1-add {
+  transform: rotate(45deg);
+}
+
+.span2-add {
+  transform: rotate(-45deg);
+  top: -9px;
+}
+
+.span3-add {
+  visibility: hidden;
+}
+
+.menu {
+  display: none;
+  // display: block; //и появляется меню
+  text-align: center;
+  background-color: white;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 467px;
+}
+
+.menu-show {
+  display: block;
+}
+
+.menu__iteam {
+  width: 100%;
+  padding: 15px 15px 15px 15px;
+
+  &:nth-child(1) {
+    padding: 30px 0 15px 0;
   }
-  .menu
-  {
-    display: none;
-    // display: block; и появляется меню
-    text-align: center;
-    background-color: white;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    height: 467px;
+}
+
+.menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-menu;
+
+  &:hover {
+    color: $first-color-text;
   }
-
-  .menu__iteam{
-    width: 100%;
-    padding: 15px 15px 15px 15px;
-
-    &:nth-child(1){
-      padding: 30px 0 15px 0;
-    }
-  }
-
-  .menu__link{
-    text-decoration: none;
-    text-transform:uppercase;
-    color:  $color-menu;
-
-    &:hover{
-      color: $first-color-text;
-    }
-  }
+}
 // =========================================================
-.wrapper__main-page{
+.wrapper__main-page {
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -102,22 +116,21 @@
   // height: auto;
   position: relative;
   // background-color: blueviolet;
-  
 }
-.title_and_btn{
+.title_and_btn {
   margin: 0 auto;
   // background-color: aqua;
 }
-.wrapper__main-page{
+.wrapper__main-page {
   width: 100%;
 }
 
-.wrapper__img-phone-header{
+.wrapper__img-phone-header {
   display: none;
 }
 // =============================================
 
-.title_main{
+.title_main {
   color: $second-color-text;
   font-size: 25px;
   font-family: Raleway-Bold;
@@ -126,7 +139,7 @@
   padding: 10px 0;
   margin: 0;
 }
-.text_main{
+.text_main {
   color: $second-color-text;
   font-size: 18px;
   font-family: Raleway-Bold;
@@ -134,21 +147,21 @@
   margin: 0 0 40px 0;
 }
 
-.ul_main{
+.ul_main {
   color: $second-color-text;
   font-size: 12px;
   font-family: OpenSans;
   margin-bottom: 30px;
 }
-.ul_main_li{
+.ul_main_li {
   padding: 5px 0;
   margin: 0;
   list-style-type: none;
 
-  &::before{
-    content: "";
+  &::before {
+    content: '';
     position: relative;
-    content: "";
+    content: '';
     display: inline-block;
     width: 0.4em;
     height: 0.4em;
@@ -160,7 +173,7 @@
   }
 }
 
-.download_btn{
+.download_btn {
   width: 212px;
   height: 50px;
   background-color: $main-color-site;
@@ -172,7 +185,7 @@
   cursor: pointer;
 }
 
-.text_download{
+.text_download {
   margin-left: 20px;
   color: $second-color-text;
   font-size: 20px;
@@ -180,80 +193,76 @@
 }
 // =============================================================================================================
 
-
-@media screen and (min-width: 768px){
-
-  .wrapper__header{
+@media screen and (min-width: 768px) {
+  .wrapper__header {
     background-image: url('/images/background-tablet-image.jpg');
   }
-  .wrapper__indent{
+  .wrapper__indent {
     padding: 0 3em;
   }
-  
-  .wrapper__header{
+
+  .wrapper__header {
     max-width: 1200px;
     height: 758px;
-    }
-  .navigation{
+  }
+  .navigation {
     flex-direction: row;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .menu-burger
-  {
+  .menu-burger {
     display: none;
   }
-  .wrapper__logo-burger{
+  .wrapper__logo-burger {
     width: 20%;
   }
 
-  .menu
-  {
+  .menu {
     width: 500px;
-    height: auto; 
+    height: auto;
     visibility: visible;
     display: flex;
     justify-content: flex-end;
   }
-  .menu__iteam:nth-child(1){
+  .menu__iteam:nth-child(1) {
     padding: 0;
   }
-  .menu__iteam{
+  .menu__iteam {
     padding: 0;
   }
 
-// =========================================================
-  .wrapper__main-page{
+  // =========================================================
+  .wrapper__main-page {
     height: 656px;
     margin: 0 auto;
   }
-  .title_and_btn{
+  .title_and_btn {
     margin: 0;
     // background-color: aqua;
   }
 
   // =======================================================
-  .title_main{
+  .title_main {
     font-size: 42px;
     text-align: center;
   }
-  .text_main{
+  .text_main {
     font-size: 22px;
   }
-  .ul_main{
+  .ul_main {
     font-size: 18px;
     margin-bottom: 60px;
   }
   // ==========================================
-  .wrapper__img-phone-header{
+  .wrapper__img-phone-header {
     margin: 0;
     padding: 0;
     width: 300px;
     height: 560px;
     display: block;
-    }
-  .header_position_phone{
+  }
+  .header_position_phone {
     position: absolute;
     // background-color: aqua;
     widows: 180px;
@@ -262,7 +271,7 @@
     right: 7em;
     z-index: 2;
   }
-  .header_position_phone1{
+  .header_position_phone1 {
     position: absolute;
     // background-color: aqua;
     widows: 195;
@@ -273,27 +282,27 @@
   }
 }
 
-@media screen and (min-width: 1200px){
-  .wrapper__header{
+@media screen and (min-width: 1200px) {
+  .wrapper__header {
     background-image: url('/images/background-desktop-image.jpg');
-    background-size:cover;
+    background-size: cover;
     margin: 0 auto;
     height: 758px;
     max-width: 100vw;
     margin-bottom: 105px;
   }
-  .wrapper__indent{
+  .wrapper__indent {
     padding: 0 4.5em;
     max-width: 1600px;
   }
-  .header_position_phone{
+  .header_position_phone {
     position: absolute;
     widows: 268px;
     height: 550px;
     bottom: -5.5em;
     right: 11em;
   }
-  .header_position_phone1{
+  .header_position_phone1 {
     position: absolute;
     widows: 295px;
     height: 615px;
@@ -301,7 +310,5 @@
     right: 5em;
   }
 }
-
- 
 
 // input и стиль кнопки меню в мобайл версии
