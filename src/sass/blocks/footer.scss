@@ -69,21 +69,21 @@
 }
 
 .footer__social-icon:hover {
-  background-position-y: -187px;
+  background-position-y: -103px;
 }
 
 .footer__social-icon--facebook {
-  background-position: -19px -103px;
+  background-position: -19px -187px;
   margin-right: 20px;
 }
 
 .footer__social-icon--twitter {
-  background-position: -691px -103px;
+  background-position: -691px -187px;
   margin-right: 20px;
 }
 
 .footer__social-icon--linkedin {
-  background-position: -355px -103px;
+  background-position: -355px -187px;
 }
 
 .footer__phone,
@@ -136,23 +136,10 @@
     margin-right: 0;
   }
 
-  // .footer__form {
-  //   // display: flex;
-  //   // flex-wrap: wrap-reverse;
-  //   // flex-direction: row-reverse;
-  //   // justify-content: space-between;
-  //   // width: 40%;
-  //   // margin-right: 0;
-  // }
-
-  // .contacts {
-  //   // width: 37%;
-  //   // justify-content: center;
-  // }
-
   .pc-wrapper {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
   .footer__bottom-block {
