@@ -13,7 +13,7 @@
 
 .team__container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -66,6 +66,7 @@
   opacity: 0;
   background-color: #28ba9f;
 }
+
 .socials {
   position: absolute;
   top: 0;
@@ -87,6 +88,11 @@
   padding-right: 25px;
   padding-top: 20px;
   opacity: 0;
+}
+
+.social__text--h3 {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .socials__item {
@@ -123,4 +129,27 @@
 }
 .card:hover .card__name {
   color: #1b7e6b;
+}
+
+.team__title {
+  text-align: center;
+  padding-top: 106px;
+  font-family: $text-font;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 28px;
+  color: #21b49c;
+}
+
+@media (min-width: 768px) {
+  .team__container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team__container {
+    flex-wrap: nowrap;
+    // justify-content: space-between;
+  }
 }
