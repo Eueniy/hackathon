@@ -24,22 +24,54 @@
 
 .video__icon {
   display: flex;
-}
+  position: relative;
+  justify-content: space-between;
+  width: 160px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 
-.video__icon--apple {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-color: $color-bg-icon;
-}
+  & svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+    &--apple {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: $color-bg-icon;
+
+    & svg {
+      position: absolute;
+      left: 22%;
+    }
+  }
+
+  &--android {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: $color-bg-icon;
+
+      & svg {
+        position: absolute;
+        left: 78%;
+      }
+    }
+  }
+
 
 .video__window {
+  // padding-top: 40px;
   position: relative;
 }
 
 .video__window img {
   width: 100%;
   max-width: 500px;
+  margin: 0 auto;
 }
 
 .video__button-play {
