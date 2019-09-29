@@ -1,140 +1,110 @@
-/* Общие настройки html */
-
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
-  html{
-    box-sizing: border-box;
-  }
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
-  img {
-    display: block;
-    max-width: 100%;
-      
-
-  }
-
-  .section__container{
-    width: 275px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .section__text{
-    padding-left: 15px;
-    padding-right: 2px;
-    margin-bottom: 50px;
-    margin-top: 35px;
-    font-family: ﻿OpenSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
-    font-size: 16px;
-    color: rgba(6, 32, 51, 255);
-    text-align: center;
-  }
-  
-  .team__container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .card{
-    width: 275px;
-    height: auto;
-    text-align: center;
-    margin: 0 auto; 
-  }
-
-  .card__image{
-    cursor: pointer;
-    width: 275px;
-    height: 305px;
-    overflow: hidden;
-    text-align: center;
-    margin: 0 auto;
-    position: absolute;
-  }
-
-
-  .card__name{
-    margin-top: 45px;
-    font-family: ﻿OpenSans-Semibold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
-    font-size: 18px;
-    color: rgba(6, 32, 51, 255);
-    text-align: center; 
-  }
-
-  .card__position{
-    margin-top: 15px;
-    font-family: ﻿OpenSans, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
-    font-size: 13px;
-    color: rgba(6, 32, 51, 255);
-    text-align: center;
-    margin-bottom: 50px;
+.section__text {
+  padding-left: 15px;
+  padding-right: 2px;
+  margin-bottom: 50px;
+  margin-top: 35px;
+  font-family: OpenSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  font-size: 16px;
+  color: rgba(6, 32, 51, 255);
+  text-align: center;
 }
 
-  .card__grad {
-    width: 275px;
-    height: 305px;
-    top: 0;
-    opacity: 0;
-    position: absolute;
-    background-color: #28ba9f;
+.team__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
+.card {
+  position: relative;
+  width: 275px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card__image {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card__image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.card__name {
+  margin-top: 45px;
+  font-family: OpenSans-Semibold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  font-size: 18px;
+  color: rgb(6, 32, 51);
+  text-align: center;
+}
+
+.card__position {
+  margin-top: 15px;
+  font-family: OpenSans, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  font-size: 13px;
+  color: rgb(6, 32, 51);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card__grad {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  background-color: #28ba9f;
+}
 .socials {
-  
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 205px;
-    left: 80px;
-    opacity: 1;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
 }
 
-.social__text{
-    position: relative;
-    font-family:﻿OpenSans;
-    font-size: 16px;
-    color: rgba(255, 255, 255, 255);
-    text-align: center;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 20px;
-    z-index: -1;
+.social__text {
+  position: relative;
+  font-family: OpenSans;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  opacity: 0;
 }
-  
-.socials__item{
-    display: inline-block;
-    width: 42px;
-    height: 42px;
-    background-color: #1b7e6b;
-    margin-right: 2px;
-    position: relative;
-    opacity: 0;
-    margin-top: 70px;   
+
+.socials__item {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background-color: #1b7e6b;
+  margin-right: 2px;
+  position: relative;
+  opacity: 0;
+  margin-top: 70px;
 }
 
 .socials__icon {
-    width: 22px;
-    height: 22px;
-    fill: #ffffff;         
+  width: 22px;
+  height: 22px;
+  fill: #ffffff;
 }
 
-.card__image:hover .card__grad {
-    background: #21b49c;
-    opacity: 0.9;
-    animation-duration: 0.2s;
-    animation-name: move;
-    animation-fill-mode: forwards;
+.card:hover .card__grad {
+  background: #21b49c;
+  opacity: 0.9;
 }
 
-.card__image:hover .social__text {
-    z-index: 1;
+.card:hover .social__text {
+  opacity: 1;
 }
