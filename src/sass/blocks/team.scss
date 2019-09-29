@@ -3,15 +3,17 @@
   padding-right: 2px;
   margin-bottom: 50px;
   margin-top: 35px;
-  font-family: OpenSans-Bold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  font-family: $text-font;
+  font-weight: 700;
   font-size: 16px;
-  color: rgba(6, 32, 51, 255);
+  line-height: 24px;
+  color: rgb(6, 32, 51);
   text-align: center;
 }
 
 .team__container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -31,13 +33,15 @@
 
 .card__image img {
   display: block;
-  height: auto;
+  height: 305px;
   width: 100%;
 }
 
 .card__name {
-  margin-top: 45px;
-  font-family: OpenSans-Semibold, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  margin-top: 20px;
+  font-family: $text-font;
+  font-weight: 700;
+  line-height: 20px;
   font-size: 18px;
   color: rgb(6, 32, 51);
   text-align: center;
@@ -45,7 +49,9 @@
 
 .card__position {
   margin-top: 15px;
-  font-family: OpenSans, ﻿AdobeInvisFont, ﻿MyriadPro-Regular;
+  font-family: $text-font;
+  font-weight: 400;
+  line-height: 20px;
   font-size: 13px;
   color: rgb(6, 32, 51);
   text-align: center;
@@ -60,9 +66,8 @@
   opacity: 0;
   background-color: #28ba9f;
 }
+
 .socials {
-  display: flex;
-  flex-direction: row;
   position: absolute;
   top: 0;
   left: 0;
@@ -73,14 +78,21 @@
 
 .social__text {
   position: relative;
-  font-family: OpenSans;
+  font-family: $text-font;
+  font-weight: 400;
+  line-height: 24px;
   font-size: 16px;
-  color: #000;
+  color: #fff;
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 20px;
   opacity: 0;
+}
+
+.social__text--h3 {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .socials__item {
@@ -91,13 +103,15 @@
   margin-right: 2px;
   position: relative;
   opacity: 0;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .socials__icon {
   width: 22px;
   height: 22px;
-  fill: #ffffff;
+  fill: #fff;
+  position: relative;
+  margin-top: 10px;
 }
 
 .card:hover .card__grad {
@@ -107,4 +121,35 @@
 
 .card:hover .social__text {
   opacity: 1;
+}
+
+.card:hover .socials__item {
+  opacity: 1;
+  z-index: 1;
+}
+.card:hover .card__name {
+  color: #1b7e6b;
+}
+
+.team__title {
+  text-align: center;
+  padding-top: 106px;
+  font-family: $text-font;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 28px;
+  color: #21b49c;
+}
+
+@media (min-width: 768px) {
+  .team__container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team__container {
+    flex-wrap: nowrap;
+    // justify-content: space-between;
+  }
 }
