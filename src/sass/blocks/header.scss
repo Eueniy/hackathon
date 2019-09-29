@@ -45,7 +45,6 @@
   outline: none;
 }
 // ================================================4
-// >>>>>>> 47e4bbf10600746548448de8d2c6341830d609bb
 
 .menu-burger span {
   display: block;
@@ -88,18 +87,7 @@
 .menu-show {
   display: block;
 }
-.header-title-show{
-  display: none;
-  margin: 0 auto;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  height: 468px;
-  // height: auto;
-  position: relative;
-  
-  // background-color: blueviolet;
-}
+
 
 .menu__iteam {
   width: 100%;
@@ -130,6 +118,18 @@
   align-items: center;
   height: 468px;
   position: relative;
+}
+.header-title-show{
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 468px;
+  // height: auto;
+  position: relative;
+  
+  // background-color: blueviolet;
 }
 .title_and_btn {
   margin: 0 auto;
@@ -307,7 +307,7 @@
     margin: 0 auto;
     height: 758px;
     max-width: 100vw;
-    margin-bottom: 105px;
+    margin-bottom: 80px;
   }
   .wrapper__indent {
     padding: 0 4.5em;
