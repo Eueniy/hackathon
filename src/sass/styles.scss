@@ -4,7 +4,6 @@
 @import './components/base';
 @import './helpers/variables';
 @import './fonts';
-@import './components/base';
 @import './components/container';
 @import './components/title';
 @import './components/button';
@@ -13,8 +12,8 @@
 //blocks
 
 @import './blocks/header';
+@import './blocks/features';
 @import './blocks/video';
 @import './blocks/team';
 @import './blocks/reviews';
 @import './blocks/footer';
-@import './blocks/features';
